@@ -6,8 +6,9 @@ body {
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    padding: 5%;
+    padding: 10%;
 }
+
 
 .color-primary {
     background: #3882f6;
@@ -17,26 +18,25 @@ body {
 .outline {
     background-color: #3882f6;
     border: 2px solid #ffffff;
-    border-radius: 2%;
+    border-radius: 5px;
     color: #ffffff;
 }
 .container {
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    /* max-width: 75%; */
+    /* padding: 5%; */
 }
 
 button {
     width: 75px;
     height: 35px;
     font-size: 12px;
-    border-radius: 5%;
+    border-radius: 5px;
     border-width: 0px;
 }
 
-button.outline {
- align-self: center;
-}
+
 
 .item {
     /* display: flex; */
@@ -46,7 +46,7 @@ button.outline {
 .item-row {
     display: flex;
     flex: 1;
-    padding: 5%;
+    /* padding: 5%; */
     flex-direction: row;
 }
 
@@ -60,6 +60,8 @@ header, section, footer {
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding: 5%;
+    /* max-width: 80%; */
 }
 
 header, footer {
@@ -68,11 +70,14 @@ header, footer {
 }
 
 footer {
-    height: 100px;
+    /* height: 50px; */
     justify-content: center;
     align-items: center;
-   
-    
+}
+
+.light-link {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 nav {
@@ -80,7 +85,7 @@ nav {
     flex-direction: row;
     flex: 1;
     justify-content: space-between;
-    padding: 0% 5% 0% 5%;
+    /* padding: 0% 5% 0% 5%; */
 
 }
 
@@ -93,7 +98,7 @@ nav {
 .nav-right {
     display: flex;
     
-    /* align-content: flex-end; */
+    align-content: flex-end;
     flex-direction: row;
     justify-content: space-between;
 
@@ -120,8 +125,8 @@ blockquote {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 5% 0 5%;
-    
+    /* padding: 0 5% 0 5%;
+     */
 }
 .hero-main {
     font-size: 48px;
@@ -144,8 +149,12 @@ blockquote {
 }
 .hero-image {
     display: flex;
-    margin-left: 5%;
-    justify-content: end;
+    flex-direction: column;
+    /* flex-direction: row; */
+    /* margin-left: 5%; */
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+    /* float: right; */
 }
 .bold {
     font-weight: 900;
@@ -171,8 +180,8 @@ blockquote {
     justify-content: center;
     align-content: center;
     /* justify-content: center; */
-    margin: auto;
-    padding: 5%;
+    /* margin: auto; */
+    /* padding: 5%; */
     
 
 }
@@ -206,9 +215,24 @@ blockquote {
     width: 60%;
     margin: auto;
     /* padding-top: 15px; */
-    justify-content: space-around;
+    justify-content: space-between;
+    justify-items: space-between;
+    padding: 5%;
     /* align-content: center; */
     align-items: center;
 }
 
+.call-to-action .item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: auto;
+}
+
+button.outline {
+    align-self: center;
+    /* justify-items: center; */
+   }
 
