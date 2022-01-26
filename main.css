@@ -13,6 +13,13 @@ body {
     background: #3882f6;
     color: #ffffff;
 }
+
+.outline {
+    background-color: #3882f6;
+    border: 2px solid #ffffff;
+    border-radius: 2%;
+    color: #ffffff;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -25,6 +32,10 @@ button {
     font-size: 12px;
     border-radius: 5%;
     border-width: 0px;
+}
+
+button.outline {
+ align-self: center;
 }
 
 .item {
@@ -56,6 +67,13 @@ header, footer {
     color: #f9faf8;
 }
 
+footer {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
 
 nav {
     display: flex;
@@ -160,7 +178,7 @@ blockquote {
 }
 .box {
     border: 3px solid #3882f6;
-    background-color: #3882f6;
+    /* background-color: #3882f6; */
     border-radius: 5%;
     height: 150px;
     width: 150px;
@@ -176,4 +194,21 @@ blockquote {
     margin: auto;
 
 }
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882f6;
+    border-width: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 15%;
+    width: 60%;
+    margin: auto;
+    /* padding-top: 15px; */
+    justify-content: space-around;
+    /* align-content: center; */
+    align-items: center;
+}
+
 
